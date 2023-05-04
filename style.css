@@ -345,6 +345,10 @@ button{
         letter-spacing: 1rem;
     }
 
+    label{
+        padding: 1rem;
+    }
+
     .icons_container{
         gap: 50px;
     }
