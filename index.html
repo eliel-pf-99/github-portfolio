@@ -3,8 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <title>Eliel's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<nav>
+    <div class="navbar">
+        <h2>Home</h2>
+        <div class="menu">
+            <div class="toggle"></div>
+        </div>
+    </div>
+</nav>
+<section class="intro" id="home">
+    <div class="intro-main">
+        <div>
+            <h1>Hello, I'm Eliel</h1>
+            <p> developer, ui/ux designer, ENTHUSIASTIC AND EXPLORER OF TECHNOLOGIES.</p>
+        </div>
+        <div>
+            <img src="https://avatars.githubusercontent.com/u/130425050?v=4" alt="Eliel P. Ferreira">
+        </div>
+        <h3>Nice to meet you.</h3>
+    </div>
 
+</section>
+<section id="front">
+    <div class="front skill">
+        <h1>Front End</h1>
+        <div class="icons_container"></div>
+    </div>
+
+</section>
+<section id="back">
+    <div class="back skill">
+        <h1>Back End</h1>
+        <div class="icons_container"></div>
+    </div>
+
+</section>
+<section id="contact" class="contact">
+    <h1 class="">Text me</h1>
+    <form>
+        <div style="display: flex; gap: 24px; width: 100%;">
+            <label id="lbl_name">
+                Name
+                <input type="text" id="name"/>
+            </label>
+            <label id="lbl_email">
+                Email
+                <input type="email" id="email"/>
+            </label>
+        </div>
+        <label id="lbl_message">
+            Message
+            <textarea id="message"></textarea>
+        </label>
+        <button type="submit">Submit</button>
+    </form>
+    <div class="hidden" id="thanks">
+        <h1 class="thanks">Thank you</h1>
+        <p class="thanks-p">I will return as soon as possible. ;)</p>
+    </div>
+
+
+</section>
+<div class="screen-nav">
+    <ul>
+        <li><a href="#home">Home</a> </li>
+        <li><a href="#front">Front</a> </li>
+        <li><a href="#back">Back</a> </li>
+        <li><a href="#contact">Contact</a> </li>
+    </ul>
+</div>
+
+<script type="module" src="index.js"></script>
+<script>
+
+</script>
 </body>
 </html>
