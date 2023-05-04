@@ -6,6 +6,14 @@ const menu_action = () => {
     toggle.classList.toggle('open');
     nav_screen.classList.toggle('show');
     body.style.overflowY = body.style.overflowY === 'hidden' ? "scroll" : 'hidden';
+    let color = "";
+    if(nav_screen.classList.contains('show')){
+        color = "#FFF"
+    }
+    else{
+        window.scroll(0,window.scrollY - 1 );
+    }
+    document.documentElement.style.setProperty('--theme', color);
 }
 menu.addEventListener('click', menu_action);
 document.querySelectorAll('.screen-nav ul li a').forEach(link => link.addEventListener('click', menu_action))
@@ -125,7 +133,6 @@ function submit(){
             setTimeout(() => {message.classList.remove('error_input');
                 lbl.classList.remove('error')}, 2000)
         }
-        return;
     }
 
 }

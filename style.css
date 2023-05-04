@@ -13,7 +13,6 @@
 body{
     overflow-y: scroll;
     scroll-snap-type: y mandatory;
-    overflow-x: hidden;
 }
 
 nav{
@@ -76,6 +75,7 @@ nav{
     height: 2px;
     transform: rotate(90deg);
     transition: all .5s;
+    background-color: var(--theme);
 }
 
 section {
@@ -87,11 +87,6 @@ section {
     text-transform: uppercase;
     scroll-snap-align: center;
 }
-
-section:nth-child(odd){
-    background-color: black;
-}
-
 
 section h1{
     font-size: 5rem;
@@ -141,6 +136,7 @@ section h1{
     opacity: 0;
     filter: blur(5px);
     transition: all 1.5s;
+    overflow-x: hidden;
 }
 
 .front{
@@ -178,11 +174,13 @@ section h1{
     gap: 100px;
     padding: 40px;
     justify-content: center;
+    align-items: center;
 }
 
-.back{
+.back-section{
     background-color: black;
     color: white;
+    overflow-x: hidden;
 }
 
 
@@ -192,8 +190,7 @@ form{
     flex-wrap: wrap;
     gap: 24px;
     align-items: center;
-    margin-top: 10px;
-
+    margin: 10px;
 }
 
 label{
@@ -240,7 +237,6 @@ button{
 }
 
 .contact{
-    overflow-x: hidden;
     overflow-y: hidden;
 }
 
@@ -286,6 +282,7 @@ button{
     flex-wrap: wrap;
     gap: 10rem;
     list-style-type: none;
+    justify-content: center;
 }
 
 .screen-nav ul li a{
@@ -318,24 +315,22 @@ button{
 }
 
 
-@media only screen and (max-width: 640px){
-    body{
-        overflow-x: hidden;
-    }
+@media (max-width: 768px){
 
     nav{
         background-color: black;
         padding: .5rem 0;
+        width: 100%;
     }
     .navbar{
         color: #FFFFFF;
         padding: 0;
     }
     .toggle{
-        background-color: #FFFFFF;
+        background-color: #FFFFFF !important;
     }
     .toggle::after{
-        background-color: #FFFFFF;
+        background-color: #FFFFFF !important;
     }
     section{
         padding: 5rem 10%;
@@ -350,8 +345,8 @@ button{
         letter-spacing: 1rem;
     }
 
-    .screen-nav{
-        width: 100%;
+    .icons_container{
+        gap: 50px;
     }
 
     .screen-nav ul{
