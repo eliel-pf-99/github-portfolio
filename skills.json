@@ -1,0 +1,72 @@
+{
+  "frontend": [
+    {
+      "title": "HTML",
+      "icon": "html5"
+    },
+    {
+      "title": "CSS",
+      "icon": "css3"
+    },
+    {
+      "title": "Javascript",
+      "icon": "javascript"
+    },
+    {
+      "title": "Typescript",
+      "icon": "typescript"
+    },
+    {
+      "title": "React",
+      "icon": "react"
+    },
+    {
+      "title": "Vue.JS",
+      "icon": "vuedotjs"
+    },
+    {
+      "title": "Next.JS",
+      "icon": "nextdotjs"
+    },
+    {
+      "title": "Tailwind CSS",
+      "icon": "tailwindcss"
+    },
+    {
+      "title": "Three.JS",
+      "icon": "threedotjs"
+    }
+  ],
+  "backend": [
+    {"title": "Python",
+     "icon": "python"},
+    {
+      "title": "Java",
+      "url": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-plain.svg"
+    },
+    {
+      "title": "C#",
+      "icon": "csharp"
+    },
+    {
+      "title": "FastApi",
+      "icon": "fastapi"
+    },
+    {
+      "title": "Spring",
+      "icon": "spring"
+    },
+    {
+      "title": ".NET",
+      "icon": "dotnet"
+    },
+    {
+      "title": "Express",
+      "icon": "express"
+    },
+    {
+      "title": "Nest.JS",
+      "icon": "nestjs"
+    }
+  ]
+}
