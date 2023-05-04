@@ -319,6 +319,10 @@ button{
 
 
 @media only screen and (max-width: 640px){
+    body{
+        overflow-x: hidden;
+    }
+
     nav{
         background-color: black;
         padding: .5rem 0;
