@@ -88,7 +88,7 @@ section {
     scroll-snap-align: center;
 }
 
-section:nth-child(even){
+section:nth-child(odd){
     background-color: black;
 }
 
