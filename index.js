@@ -99,6 +99,14 @@ window.addEventListener('scroll', () => {
 
 function submit(){
 
+    function creatObj(name, email, message){
+        return {
+                "name" : name.value.toString(),
+                "email" : email.value.toString(),
+                "message" : message.value.toString()
+        }
+    }
+
     let name = document.querySelector('#name');
     let email = document.querySelector('#email');
     let message = document.querySelector('#message');
@@ -108,8 +116,21 @@ function submit(){
     let message_check = message.value.toString().trim() === "";
 
     if(!(name_check && email_check && message_check)){
-        document.querySelector('form').classList.add('hidden');
-        document.querySelector('#thanks').classList.remove('hidden')
+        console.log(typeof name.value.toString(), name.value.toString())
+        let obj = creatObj(name, email, message);
+        fetch("http://localhost:8000/msg/", {method: "POST",
+            body: JSON.stringify({
+                name: name.value,
+                email: email.value,
+                message: message.value
+            }),
+            headers: {
+                "Content-type": "application/json; charset=UTF-8"
+            }}).then((aws) => {
+            document.querySelector('form').classList.add('hidden');
+            document.querySelector('#thanks').classList.remove('hidden');
+        })
+            .catch(() => alert("Ops something wrong!"))
     }
     else{
         if(name_check){
