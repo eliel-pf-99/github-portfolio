@@ -116,7 +116,6 @@ function submit(){
     let message_check = message.value.toString().trim() === "";
 
     if(!(name_check && email_check && message_check)){
-        console.log(typeof name.value.toString(), name.value.toString())
         let obj = creatObj(name, email, message);
         fetch("http://localhost:8000/msg/", {method: "POST",
             body: JSON.stringify({
