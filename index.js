@@ -117,7 +117,7 @@ function submit(){
 
     if(!(name_check && email_check && message_check)){
         let obj = creatObj(name, email, message);
-        fetch("https://pymail.netlify.app/msg/", {method: "POST",
+        fetch("https://portfoliopymail.onrender.com/msg/", {method: "POST",
             body: JSON.stringify({
                 name: name.value,
                 email: email.value,
